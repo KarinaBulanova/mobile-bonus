@@ -1,16 +1,16 @@
 public class Main {
     public static void main(String[] args) {
         int x = 100;
-        int y = 500;
-        int bonus = y/100;
-        int total = x+y+bonus;
+        int y = 300;
 
+         int bonus;
         if (y>=500) {
-            System.out.println("Колличество бонусных рублей:" +bonus);
+            bonus = y/100;
         } else {
-            System.out.println("Колличество бонусных рублей: 0 ");
+            bonus = 0;
         }
-
+        System.out.println("Колличество бонусных рублей:" +bonus);
+        int total = x+y+bonus;
         System.out.println("Итоговый счет:" +total);
     }
 }
