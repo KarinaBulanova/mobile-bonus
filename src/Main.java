@@ -1,10 +1,10 @@
 public class Main {
     public static void main(String[] args) {
         int initialMobileAccount = 100;
-        int topUpMobile = 500;
+        int topUpMobile = 1100;
 
         int bonus;
-        if (topUpMobile >= 500) {
+        if (topUpMobile >= 1000) {
             bonus = topUpMobile / 100;
         } else {
             bonus = 0;
