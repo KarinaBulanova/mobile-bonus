@@ -1,16 +1,17 @@
 public class Main {
     public static void main(String[] args) {
-        int x = 100;
-        int y = 300;
+        int initialMobileAccount = 100;
+        int topUpMobile = 300;
 
-         int bonus;
-        if (y>=500) {
-            bonus = y/100;
+        int bonus;
+        if (topUpMobile >= 500) {
+            bonus = topUpMobile / 100;
         } else {
             bonus = 0;
         }
-        System.out.println("Колличество бонусных рублей:" +bonus);
-        int total = x+y+bonus;
-        System.out.println("Итоговый счет:" +total);
+        System.out.println("Колличество бонусных рублей:" + bonus);
+        int finalScore = initialMobileAccount + topUpMobile + bonus;
+        System.out.println("Итоговый счет:" +
+                finalScore);
     }
 }
